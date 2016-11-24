@@ -1,0 +1,22 @@
+ // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+  $(document).ready(function(){
+	$('.novelty-slider, .sale-slider').bxSlider({
+		controls: true,
+		pager: false,
+		//nextSelector: '#slider-next',
+		//prevSelector: '#slider-prev',
+		slideWidth: 150,
+		minSlides: 1,
+		maxSlides: 5,
+		slideMargin: 5,
+		adaptiveHeight: true,
+		responsive: true
+	});
+});
